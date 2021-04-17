@@ -1,0 +1,38 @@
+State,Green,Orange,Red
+Andaman And Nicobar Islands,2,0,1
+Andhra Pradesh,1,7,5
+Arunachal Pradesh,25,0,0
+Assam,30,3,0
+Bihar,13,20,5
+Chandigarh,0,0,1
+Chhattisgarh,25,1,1
+Dadra And Nagar Haveli,1,0,0
+Daman And Diu,2,0,0
+Delhi,0,0,11
+Goa,2,0,0
+Gujarat,5,19,9
+Haryana,2,18,2
+Himachal Pradesh,6,6,0
+Jammu And Kashmir,4,12,4
+Jharkhand,14,9,1
+Karnataka,14,13,3
+Kerala,2,10,2
+Ladakh,0,2,0
+Lakshadweep,1,0,0
+Madhya Pradesh,24,19,9
+Maharashtra,6,16,14
+Manipur,16,0,0
+Meghalaya,10,1,0
+Mizoram,11,0,0
+Nagaland,11,0,0
+Orrisa,21,6,3
+Puducherry,3,1,0
+Punjab,4,15,3
+Rajasthan,6,19,8
+Sikkim,4,0,0
+Tamil Nadu,1,24,12
+Telangana,9,18,6
+Tripura,6,2,0
+Uttar Pradesh,20,36,19
+Uttarakhand,10,2,1
+West Bengal,8,5,10

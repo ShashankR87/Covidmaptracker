@@ -1,0 +1,49 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <stdlib.h>
+#include <sstream>
+#include <GL/glut.h>
+
+using namespace std;
+void init() {
+	gluOrtho2D(-500, 500, -500, 500);
+	glClearColor(1, 1, 1, 0);
+}
+char str[15];
+int cx1 = 50, cy1 = 100;
+int cx2 = 20, cy2 = 180, d = 10;
+void display()
+{
+	int i;
+	glClear(GL_COLOR_BUFFER_BIT);
+	glColor3f(0, 1, 0);
+	glRasterPos2d(cx1, cy1);
+	for (i = 0; i < strlen(str); i++)
+	{
+		glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, str[i]);
+	}
+	glColor3f(1, 0, 0);
+	for (i = 0; i < strlen(str); i++)
+	{
+		glRasterPos2d(cx2, cy2 - d * i);
+		glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, str[i]);
+	}
+	glFlush();
+}
+int main()
+{
+	string str;
+	std::cout << "Enter the text";
+	str = "baka";
+	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+	glutInitWindowSize(1000, 1000);
+	glutCreateWindow("Graph");
+	init();
+	glutDisplayFunc(display);
+	glutMainLoop();//Exception thrown at 0x50E8D4EC (ucrtbased.dll) in Graph.exe: 0xC0000005: Access violation writing location 0x00E1E000.
+
+}
+
+

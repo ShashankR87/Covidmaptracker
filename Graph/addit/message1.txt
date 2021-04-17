@@ -1,0 +1,226 @@
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <stdlib.h>
+#include <sstream>
+#include <GL/glut.h>
+
+using namespace std;
+vector <string> dates;
+vector <int> cases, deaths;
+int cnt=0;
+void init() {
+	gluOrtho2D(-500, 500, -500, 500);
+	glClearColor(0, 0, 0.1, 0);
+}
+
+void drawGraphCases(int casesScale[]) {
+	auto i = cases.begin();
+	auto j = 0;
+	glColor3f(1, 0, 0);
+	glPointSize(10);
+	glBegin(GL_POINTS);
+
+	for (; i < cases.end(); i++, j += 200 / (cnt)) {
+		glVertex2f(j-450, *i-450);
+	}
+	glEnd();
+	glPointSize(5);
+	glBegin(GL_LINE_STRIP);
+	i = cases.begin();
+	j = 0;
+	for (; i < cases.end(); i++, j += 200 / (cnt)) {
+		glVertex2f(j - 450, *i - 450);
+	}
+	glEnd();
+	glColor3f(1, 1, 1);
+	char str[] = "Cases";
+	glRasterPos2f(-485, -350);
+	for (int k = 0; k < strlen(str); k++) {
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_10, str[k]);
+	}
+
+	char st[] = "Dates";
+	glRasterPos2f(-425, -475);
+	for (int k = 0; k < strlen(st); k++) {
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_10, st[k]);
+	}
+	glFlush();
+}
+
+void drawGraphDeaths() {
+	auto i = deaths.begin();
+	auto j = 0;
+	glColor3f(1, 0, 0);
+	glPointSize(10);
+	glBegin(GL_POINTS);
+
+	for (; i < deaths.end(); i++, j += 200 / (cnt)) {
+		glVertex2f(j + 275, *i*49 - 450);
+	}
+	glEnd();
+	glPointSize(5);
+	glBegin(GL_LINE_STRIP);
+	i=deaths.begin();
+	j = 0;
+	for (; i < deaths.end(); i++, j += 200 / (cnt)) {
+		glVertex2f(j + 275, *i * 49 - 450);
+	}
+	glEnd();
+
+	glColor3f(1, 1, 1);
+	char str[] = "Deaths";
+	glRasterPos2f(230, -350);
+	for (int k = 0; k < strlen(str); k++) {
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_10, str[k]);
+	}
+	char st[] = "Dates";
+	glRasterPos2f(300, -475);
+	for (int k = 0; k < strlen(st); k++) {
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_10, st[k]);
+	}
+	glFlush();
+}
+
+void display() {
+	glClear(GL_COLOR_BUFFER_BIT);
+	glPointSize(5);
+	glColor3f(1, 1, 1);
+	glBegin(GL_LINES);
+	glVertex2f(-450,-450);
+	glVertex2f(-450, -250);
+	glEnd();
+	glBegin(GL_LINES);
+	glVertex2f(-450, -450);
+	glVertex2f(-250, -450);
+	
+	glEnd();
+	int casesScale[20];
+	int loopCnt = 0;
+	for (int i = 0; i < 200; i += 20)
+		casesScale[loopCnt++] = i;
+
+	int deathsScale[5];
+	int loopCnt1 = 0;
+	for (int i = 0; i < 5; i ++)
+		deathsScale[i] = i;
+	glPointSize(5);
+	loopCnt = 0;
+	for (int i = -450; i < -251; i+=20) {
+		glBegin(GL_LINES);
+		glVertex2f(-450,i);
+		glVertex2f(-455,i);
+		glEnd();
+		char st[10];
+		 _itoa(casesScale[loopCnt++],st,10);
+		glRasterPos2f(-465, i);
+		for (int k = 0; k < strlen(st); k++) {
+			glutBitmapCharacter(GLUT_BITMAP_HELVETICA_10, st[k]);
+		}
+
+	}
+	drawGraphCases(casesScale);
+
+	
+	glColor3f(1, 1, 1);
+	glBegin(GL_LINES);
+	glVertex2f(275, -450);
+	glVertex2f(275, -250);
+	glEnd();
+	glBegin(GL_LINES);
+	glVertex2f(275, -450);
+	glVertex2f(475, -450);
+
+	glEnd();
+	loopCnt1 = 0;
+	for (int i = -450; i < -249; i += 50) {
+		glBegin(GL_LINES);
+		glVertex2f(275, i);
+		glVertex2f(270, i);
+		glEnd();
+		char st[10];
+		_itoa(deathsScale[loopCnt1++], st, 10);
+		
+		glRasterPos2f(260, i);
+		for (int k = 0; k < strlen(st); k++) {
+			glutBitmapCharacter(GLUT_BITMAP_HELVETICA_10, st[k]);
+		}
+		
+
+		
+		
+
+	}
+	drawGraphDeaths();
+
+
+	glFlush();
+}
+int main()
+{
+	
+	ifstream in("k.txt");
+
+	if (!in) {
+		std::cout << "Cannot open input file.\n";
+		return 1;
+	}
+	char str[255];
+	
+	while (in) {
+
+		in.getline(str, 255);
+		string inputline = str;
+		
+		int cpos = 0, dcnt=0;
+		while (cpos < strlen(str)) {
+			
+			cpos = inputline.find(',');
+			string token = inputline.substr(0, cpos);
+			if (dcnt == 0) {
+				dates.push_back(token);
+			}
+			if (dcnt == 7) {
+				stringstream obj(token);
+				int value = 0;
+				obj >> value;
+				deaths.push_back(value);
+			}
+			
+			
+			inputline.erase(0, cpos + 1);
+			dcnt++;
+		}
+		stringstream obj(inputline);
+		int value = 0;
+		obj >> value;
+		cases.push_back(value);
+
+		
+	}
+	cases.pop_back();
+
+	//std::cout << lines;
+	in.close();
+	std::cout << "Date:\t Cases: \t Deaths: \n";
+	auto j = cases.begin();
+	auto k = deaths.begin();
+	for (auto i = dates.begin(); i < dates.end(), j < cases.end(), k < deaths.end(); i++, j++, k++) {
+		std::cout << *i << '\t' << *j << '\t' << *k << '\n';
+		cnt++;
+	}
+	
+	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+	glutInitWindowSize(1000, 1000);
+	glutCreateWindow("Graph");
+	init();
+	glutDisplayFunc(display);
+	glutMainLoop();
+
+	return 0;
+}
+
+
+

@@ -1,0 +1,24 @@
+Andaman and Nicobar Islands,120,-280,966,633
+Andhra Pradesh,-40,-200,718,504
+Bihar,35,55,835,360
+Chhattisgarh,25,0,764,448
+Delhi,-63,126,681,303
+Goa,-100,-190,623,560
+Gujarat,-120,-10,591,413
+Haryana,-80,140,656,291
+Himachal Pradesh,-65,210,678,232
+J and K,-75,270,662,185
+Jharkhand,-10,-50,817,404
+Karnataka,-80,-200,654,566
+Kerala,-66,-320,676,665
+Madhya Pradesh,-50,-10,703,415
+Maharashtra,-80,-95,655,482
+NorthEast,120,60,966,357
+Odisha,20,-75,811,467
+Punjab,-85,180,647,258
+Rajasthan,-110,80,607,339
+Tamil Nadu,-50,-280,702,633
+Telengana,-40,-125,718,566
+Uttar Pradesh,-25,80,740,340
+Uttarakhand,-40,170,716,267
+West Bengal,60,-10,872,410

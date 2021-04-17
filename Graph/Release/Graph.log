@@ -1,0 +1,79 @@
+﻿  may15.cpp
+c:\users\bshre\source\repos\graph\graph\may15.cpp(156): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(156): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(231): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(231): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(237): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(237): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(260): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(260): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(266): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(266): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(362): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(362): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(438): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(438): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(461): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(461): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(501): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(506): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(534): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(539): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(609): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(640): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(661): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(661): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(666): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(666): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(707): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(707): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(723): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(723): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(734): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(767): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(781): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(812): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(812): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(824): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(824): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(847): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(847): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(868): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(868): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(880): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(895): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(937): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\may15.cpp(967): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(967): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(983): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(983): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(991): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(991): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(992): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(992): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(997): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(997): error C2065: 'cout': undeclared identifier
+c:\users\bshre\source\repos\graph\graph\may15.cpp(998): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\thread(28): note: see declaration of 'std'
+c:\users\bshre\source\repos\graph\graph\may15.cpp(998): error C2065: 'cout': undeclared identifier

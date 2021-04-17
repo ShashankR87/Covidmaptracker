@@ -1,0 +1,24 @@
+Andaman And Nicobar Islands,2,0,1
+Andhra Pradesh,1,7,5
+Bihar,13,20,5
+Chhattisgarh,25,1,1
+Delhi,0,0,11
+Goa,2,0,0
+Gujarat,5,19,9
+Haryana,2,18,2
+Himachal Pradesh,6,6,0
+J and K,4,14,4
+Jharkhand,14,9,1
+Karnataka,14,13,3
+Kerala,2,10,2
+Madhya Pradesh,24,19,9
+Maharashtra,6,16,14
+NorthEast,113,6,0
+Orrisa,21,6,3
+Punjab,4,15,3
+Rajasthan,6,19,8
+Tamil Nadu,1,24,12
+Telangana,9,18,6
+Uttar Pradesh,20,36,19
+Uttarakhand,10,2,1
+West Bengal,8,5,10

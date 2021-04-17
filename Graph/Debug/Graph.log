@@ -1,0 +1,14 @@
+﻿  june5.cpp
+c:\users\bshre\source\repos\graph\graph\june5.cpp(754): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(759): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(789): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(794): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(905): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(936): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(1032): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(1065): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(1079): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(1222): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(1237): warning C4018: '<': signed/unsigned mismatch
+c:\users\bshre\source\repos\graph\graph\june5.cpp(1279): warning C4018: '<': signed/unsigned mismatch
+  Graph.vcxproj -> C:\Users\bshre\source\repos\Graph\Debug\Graph.exe

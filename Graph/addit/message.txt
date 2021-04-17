@@ -1,0 +1,112 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <stdlib.h>
+#include <sstream>
+#include <GL/glut.h>
+
+using namespace std;
+vector <string> dates;
+vector <int> cases, deaths;
+int cnt=0;
+void init() {
+	gluOrtho2D(-500, 500, -500, 500);
+	glClearColor(1, 1, 1, 0);
+}
+
+void drawGraphDeaths() {
+	auto i = cases.begin();
+	auto j = 0;
+	glColor3f(1, 0, 0);
+	glPointSize(10);
+	glBegin(GL_POINTS);
+
+	for (; i < cases.end(); i++, j += 500 / (cnt)) {
+		glVertex2f(j, *i*3);
+	}
+	glEnd();
+	glFlush();
+}
+
+void display() {
+	glClear(GL_COLOR_BUFFER_BIT);
+	glPointSize(5);
+	glColor3f(0, 0, 0);
+	glBegin(GL_LINES);
+	glVertex2f(0,0);
+	glVertex2f(0, 500);
+	glEnd();
+	glBegin(GL_LINES);
+	glVertex2f(0, 0);
+	glVertex2f(500, 0);
+	
+	glEnd();
+	drawGraphDeaths();
+
+
+	glFlush();
+}
+int main()
+{
+	
+	ifstream in("k.txt");
+
+	if (!in) {
+		std::cout << "Cannot open input file.\n";
+		return 1;
+	}
+	char str[255];
+	
+	while (in) {
+
+		in.getline(str, 255);
+		string inputline = str;
+		
+		int cpos = 0, dcnt=0;
+		while (cpos < strlen(str)) {
+			
+			cpos = inputline.find(',');
+			string token = inputline.substr(0, cpos);
+			if (dcnt == 0) {
+				dates.push_back(token);
+			}
+			if (dcnt == 7) {
+				stringstream obj(token);
+				int value = 0;
+				obj >> value;
+				deaths.push_back(value);
+			}
+			
+			
+			inputline.erase(0, cpos + 1);
+			dcnt++;
+		}
+		stringstream obj(inputline);
+		int value = 0;
+		obj >> value;
+		cases.push_back(value);
+
+		
+	}
+	//std::cout << lines;
+	in.close();
+	std::cout << "Date:\t Cases: \t Deaths: \n";
+	auto j = cases.begin();
+	auto k = deaths.begin();
+	for (auto i = dates.begin(); i < dates.end(), j < cases.end(), k < deaths.end(); i++, j++, k++) {
+		std::cout << *i << '\t' << *j << '\t' << *k << '\n';
+		cnt++;
+	}
+	
+	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+	glutInitWindowSize(1000, 1000);
+	glutCreateWindow("Graph");
+	init();
+	glutDisplayFunc(display);
+	glutMainLoop();
+
+	return 0;
+}
+
+
